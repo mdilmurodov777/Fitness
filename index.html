@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS JIHOZLAR STORE — Professional Sport Jihozlari Internet-Do'koni</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+
+    <!-- 1. INTRO ANIMATION / PRELOADER -->
+    <div id="intro-loader" class="intro-loader">
+        <div class="intro-content">
+            <div class="intro-icons">
+                <i class="fa-solid fa-dumbbell intro-icon i-1"></i>
+                <i class="fa-solid fa-person-running intro-icon i-2"></i>
+                <i class="fa-solid fa-bolt intro-icon i-3"></i>
+            </div>
+            <h1 class="intro-logo">FITNESS <span>STORE</span></h1>
+            <p class="intro-tagline">KUCH. CHIDAMLILIK. NATIJA.</p>
+            <div class="intro-progress-bar">
+                <div class="intro-progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. STICKY NAVBAR -->
+    <header id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span>FITNESS <strong>STORE</strong></span>
+            </a>
+
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Bosh sahifa</a></li>
+                    <li><a href="#products-section" class="nav-link" data-filter-link="all">Mahsulotlar</a></li>
+                    <li><a href="#products-section" class="nav-link" data-filter-link="gantellar">Gantellar</a></li>
+                    <li><a href="#products-section" class="nav-link" data-filter-link="treadmill">Yugurish yo‘lakchalari</a></li>
+                    <li><a href="#products-section" class="nav-link" data-filter-link="turniklar">Turniklar</a></li>
+                    <li><a href="#products-section" class="nav-link" data-filter-link="mushaklar">Mushaklar uchun</a></li>
+                    <li><a href="#discounts-section" class="nav-link highlight-link">Chegirmalar</a></li>
+                    <li><a href="#about-section" class="nav-link">Biz haqimizda</a></li>
+                    <li><a href="#footer-contact" class="nav-link">Aloqa</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="search-toggle-btn" class="icon-btn" title="Qidiruv">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button id="wishlist-open-btn" class="icon-btn" title="Sevimlilar">
+                    <i class="fa-regular fa-heart"></i>
+                    <span id="wishlist-badge" class="badge">0</span>
+                </button>
+                <button id="cart-open-btn" class="icon-btn" title="Savatcha">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cart-badge" class="badge">0</span>
+                </button>
+                <button id="profile-open-btn" class="icon-btn" title="Profil">
+                    <i class="fa-regular fa-user"></i>
+                </button>
+                <button id="theme-toggle-btn" class="icon-btn" title="Kun/Tun rejimi">
+                    <i class="fa-solid fa-sun" id="theme-icon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="icon-btn mobile-only" title="Menyu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Real-Time Search Bar Dropdown -->
+        <div id="search-bar-overlay" class="search-bar-overlay">
+            <div class="container search-bar-inner">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="global-search-input" placeholder="Mahsulot nomini yozing (masalan: Gantel, Turnik, Treadmill, Shtanga...)">
+                <button id="search-clear-btn" class="clear-search"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <span class="hero-badge"><i class="fa-solid fa-fire"></i> PREMIUM SPORT USKUNALARI</span>
+                <h1 class="hero-title">BUGUNGI HARAKATING — <span>ERTANGI NATIJANG!</span></h1>
+                <p class="hero-subtitle">Eng sifatli fitness jihozlari bilan o‘z maqsadingga erish. Professional sport uskunalarini biz bilan kashf et!</p>
+                <div class="hero-buttons">
+                    <a href="#products-section" class="btn btn-primary">
+                        <i class="fa-solid fa-bag-shopping"></i> Xarid qilish
+                    </a>
+                    <a href="#featured-carousel-section" class="btn btn-outline">
+                        Mahsulotlarni ko‘rish <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>35+</h3>
+                        <p>Professional jihozlar</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Kafolatlangan sifat</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Tezkor yetkazib berish</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED PRODUCTS CAROUSEL / SLIDER -->
+    <section id="featured-carousel-section" class="section carousel-section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-tag">TOP TANLOV</span>
+                    <h2 class="section-title">Ommabop & Yangi Jihozlar</h2>
+                </div>
+                <div class="carousel-controls">
+                    <button id="carousel-prev" class="carousel-btn" aria-label="Oldingi"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button id="carousel-next" class="carousel-btn" aria-label="Keyingi"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <div class="carousel-wrapper" id="carousel-wrapper">
+                <div class="carousel-track" id="carousel-track">
+                    <!-- JS orqali dinamik to'ldiriladi -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. CATEGORIES SHOWCASE -->
+    <section class="section categories-showcase">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">KATEGORIYALAR</span>
+                <h2 class="section-title">Yo‘nalishni Tanlang</h2>
+            </div>
+            <div class="category-cards-grid">
+                <div class="cat-card cat-gantel" data-cat-select="gantellar">
+                    <div class="cat-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                    <h3>Gantellar</h3>
+                    <p>2 kg dan 20 kg gacha va to‘plamlar</p>
+                    <span class="cat-link">Ko‘rish <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="cat-card cat-treadmill" data-cat-select="treadmill">
+                    <div class="cat-icon"><i class="fa-solid fa-person-running"></i></div>
+                    <h3>Yugurish yo‘lakchalari</h3>
+                    <p>Elektron, buklanadigan va professional</p>
+                    <span class="cat-link">Ko‘rish <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="cat-card cat-turnik" data-cat-select="turniklar">
+                    <div class="cat-icon"><i class="fa-solid fa-up-down"></i></div>
+                    <h3>Turniklar</h3>
+                    <p>Eshik, devor, shift va brus kombinatsiyasi</p>
+                    <span class="cat-link">Ko‘rish <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="cat-card cat-muscle" data-cat-select="mushaklar">
+                    <div class="cat-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+                    <h3>Mushaklar uchun</h3>
+                    <p>Bench press, shtanga, kettlebell, trenajyor</p>
+                    <span class="cat-link">Ko‘rish <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="cat-card cat-acc" data-cat-select="qoshimcha">
+                    <div class="cat-icon"><i class="fa-solid fa-medal"></i></div>
+                    <h3>Qo‘shimcha jihozlar</h3>
+                    <p>Gilam, qo‘lqop, kamar, sheyker, sumka</p>
+                    <span class="cat-link">Ko‘rish <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. MAIN CATALOG: FILTER, SORT & PRODUCTS GRID -->
+    <section id="products-section" class="section products-section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <span class="section-tag">KATALOG</span>
+                    <h2 class="section-title">Barcha Fitness Jihozlari</h2>
+                </div>
+                <div class="products-count-badge">
+                    Jami: <strong id="total-products-count">0</strong> ta mahsulot
+                </div>
+            </div>
+
+            <!-- Filter & Search Controls Bar -->
+            <div class="catalog-controls">
+                <div class="category-tabs" id="category-tabs">
+                    <button class="cat-tab active" data-category="all">Barchasi</button>
+                    <button class="cat-tab" data-category="gantellar">Gantellar</button>
+                    <button class="cat-tab" data-category="treadmill">Yugurish yo‘lakchalari</button>
+                    <button class="cat-tab" data-category="turniklar">Turniklar</button>
+                    <button class="cat-tab" data-category="mushaklar">Mushaklar uchun jihozlar</button>
+                    <button class="cat-tab" data-category="qoshimcha">Qo‘shimcha mahsulotlar</button>
+                </div>
+
+                <div class="filter-sort-row">
+                    <div class="inline-search">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" id="catalog-search-input" placeholder="Katalogdan izlash...">
+                    </div>
+
+                    <div class="price-filter">
+                        <label for="max-price-range">Maksimal narx: <span id="price-range-val">15 000 000</span> so‘m</label>
+                        <input type="range" id="max-price-range" min="100000" max="15000000" step="100000" value="15000000">
+                    </div>
+
+                    <div class="sort-box">
+                        <select id="sort-select" aria-label="Saralash">
+                            <option value="default">Saralash: Standart</option>
+                            <option value="price-asc">Arzonidan qimmatiga</option>
+                            <option value="price-desc">Qimmatidan arzoniga</option>
+                            <option value="bestseller">Eng ko‘p sotilganlar</option>
+                            <option value="rating">Eng yuqori reytingdagilar</option>
+                            <option value="discount">Chegirmadagi mahsulotlar</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div id="products-grid" class="products-grid">
+                <!-- JS orqali 32 ta mahsulot kartochkasi yuklanadi -->
+            </div>
+
+            <!-- Empty Search State -->
+            <div id="no-products-msg" class="no-products hidden">
+                <i class="fa-solid fa-box-open"></i>
+                <h3>Afsuski, mahsulot topilmadi</h3>
+                <p>Qidiruv so‘zini o‘zgartirib ko‘ring yoki filtrlarni tiklang.</p>
+                <button id="reset-filters-btn" class="btn btn-primary">Filtrlarni tiklash</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SPECIAL DISCOUNTS SECTION -->
+    <section id="discounts-section" class="section discounts-section">
+        <div class="container">
+            <div class="discount-banner">
+                <div class="discount-banner-content">
+                    <span class="discount-tag">MAXSUS TAKLIF — 30% GACHA CHEGIRMA</span>
+                    <h2>Uy Sport Zalingizni Bugun Jihozlang!</h2>
+                    <p>Tanlangan professional gantellar, yugurish yo‘lakchalari va turniklar uchun cheklangan muddatli maxsus narxlar.</p>
+                    <a href="#products-section" id="view-all-discounts-btn" class="btn btn-primary">Barcha chegirmalarni ko‘rish</a>
+                </div>
+                <div class="discount-banner-badge">
+                    <span>-30%</span>
+                    <small>CHEGIRMA</small>
+                </div>
+            </div>
+
+            <div class="section-header" style="margin-top: 3rem;">
+                <div>
+                    <span class="section-tag">QAYNOQ NARXLAR</span>
+                    <h2 class="section-title">Chegirmadagi Mahsulotlar</h2>
+                </div>
+            </div>
+
+            <div id="discounts-grid" class="products-grid">
+                <!-- JS orqali chegirmadagi mahsulotlar yuklanadi -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ABOUT US SECTION -->
+    <section id="about-section" class="section about-section">
+        <div class="container about-grid">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80" alt="Fitness Jihozlar Store Zali">
+                <div class="about-exp-card">
+                    <h4>5+ Yil</h4>
+                    <p>Sport jihozlari bozorida ishonch</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="section-tag">BIZ HAQIMIZDA</span>
+                <h2 class="section-title">Fitness Jihozlar Store — Sog‘lom Hayot Hamkoringiz</h2>
+                <p class="about-lead">Bizning maqsadimiz — har bir inson uchun sifatli sport jihozlarini taqdim etish va sog‘lom turmush tarzini qo‘llab-quvvatlash.</p>
+                <p>Fitness Jihozlar Store — uy sharoitida mashq qiluvchilardan tortib professional fitnes klublargacha eng zamonaviy va mustahkam sport uskunalarini yetkazib beruvchi yetakchi internet-do‘kon. Har bir mahsulot xavfsizlik, ergonomika va chidamlilik sinovlaridan o‘tgan.</p>
+                <div class="about-features">
+                    <div class="a-feat">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <div>
+                            <h4>Rasmiy Kafolat</h4>
+                            <p>Barcha trenajyor va jihozlarga 1 yildan 3 yilgacha kafolat.</p>
+                        </div>
+                    </div>
+                    <div class="a-feat">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <div>
+                            <h4>Tezkor Yetkazib Berish</h4>
+                            <p>Toshkent bo‘ylab 24 soat ichida, viloyatlarga 2-3 kunda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. TESTIMONIALS & FAQ SECTION -->
+    <section class="section trust-section">
+        <div class="container">
+            <div class="section-header center">
+                <span class="section-tag">MIJOZLAR FIKRI</span>
+                <h2 class="section-title">Bizga Ishonch Bildirganlar</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"20 kg sozlanadigan gantel to‘plami va devorga o‘rnatiladigan turnik sotib oldim. Sifati zo‘r, metall qalin va mustahkam. Yetkazib berish ham juda tez bo‘ldi!"</p>
+                    <div class="author">
+                        <div class="avatar">JA</div>
+                        <div>
+                            <h4>Jasur Alimov</h4>
+                            <span>Toshkent shahri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Uy uchun buklanadigan elektron yugurish yo‘lakchasi oldik. Kam joy egallaydi, shovqinsiz ishlaydi. Xizmat ko‘rsatish darajasi haqiqiy professional brendlardek."</p>
+                    <div class="author">
+                        <div class="avatar">MK</div>
+                        <div>
+                            <h4>Madina Karimova</h4>
+                            <span>Samarqand shahri</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Kichik fitnes zalimiz uchun shtanga, bench press va kettlebell to‘plamlarini shu yerdan buyurtma qildik. Narxlar hamyonbop, chegirmalar ham ajoyib!"</p>
+                    <div class="author">
+                        <div class="avatar">SR</div>
+                        <div>
+                            <h4>Sardor Rahimov</h4>
+                            <span>Farg‘ona shahri</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-wrapper">
+                <div class="section-header center">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Ko‘p Beriladigan Savollar</h2>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">Yetkazib berish qancha vaqt oladi va narxi qancha? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Toshkent shahri bo‘ylab buyurtmalar 24 soat ichida yetkazib beriladi (1 000 000 so‘mdan yuqori xaridlar uchun bepul). O‘zbekistonning barcha viloyatlariga 2-3 ish kuni ichida yetkazib beriladi.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Yugurish yo‘lakchalari va turniklarni o‘rnatib berish xizmati bormi? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>Ha, albatta! Bizning mutaxassislarimiz trenajyorlarni yig‘ish va turniklarni devor yoki shiftga professional tarzda o‘rnatib berish xizmatini ko‘rsatadilar.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">To‘lovni qanday usullarda amalga oshirish mumkin? <i class="fa-solid fa-plus"></i></button>
+                        <div class="faq-answer">
+                            <p>To‘lovni mahsulot qo‘lingizga yetib borganda naqd pul, Uzcard, Humo kartalari, shuningdek Click va Payme ilovalari orqali amalga oshirishingiz mumkin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer id="footer-contact" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#home" class="logo footer-logo">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <span>FITNESS <strong>STORE</strong></span>
+                </a>
+                <p class="footer-desc">O‘zbekistondagi eng zamonaviy professional fitness va sport jihozlari internet-do‘koni. Sifatli uskunalar bilan kuchliroq bo‘ling!</p>
+                <div class="social-links">
+                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Tezkor Havolalar</h4>
+                <ul>
+                    <li><a href="#home">Bosh sahifa</a></li>
+                    <li><a href="#products-section">Barcha mahsulotlar</a></li>
+                    <li><a href="#discounts-section">Chegirmalar</a></li>
+                    <li><a href="#about-section">Biz haqimizda</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Mahsulot Kategoriyalari</h4>
+                <ul>
+                    <li><a href="#products-section" data-filter-link="gantellar">Gantellar</a></li>
+                    <li><a href="#products-section" data-filter-link="treadmill">Yugurish yo‘lakchalari</a></li>
+                    <li><a href="#products-section" data-filter-link="turniklar">Turniklar</a></li>
+                    <li><a href="#products-section" data-filter-link="mushaklar">Mushaklar uchun jihozlar</a></li>
+                    <li><a href="#products-section" data-filter-link="qoshimcha">Qo‘shimcha mahsulotlar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Aloqa Ma'lumotlari</h4>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:+998916100000">+998 91 610 00 00</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Toshkent shahri, Chilonzor tumani, Sportchilar ko‘chasi, 15-uy</li>
+                    <li><i class="fa-solid fa-clock"></i> Har kuni: 09:00 — 22:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 FITNESS JIHOZLAR STORE. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <button id="scroll-top-btn" class="scroll-top-btn" title="Yuqoriga">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- ================= MODALS & DRAWERS ================= -->
+
+    <!-- CART DRAWER -->
+    <div id="cart-drawer" class="drawer-backdrop">
+        <div class="drawer-panel">
+            <div class="drawer-header">
+                <h3><i class="fa-solid fa-cart-shopping"></i> Savatcha (<span id="drawer-cart-count">0</span>)</h3>
+                <button class="close-drawer" data-close="cart-drawer"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="cart-items-container" class="drawer-body">
+                <!-- Savatcha mahsulotlari -->
+            </div>
+            <div class="drawer-footer">
+                <div class="cart-total-row">
+                    <span>Umumiy summa:</span>
+                    <strong id="cart-total-price">0 so‘m</strong>
+                </div>
+                <button id="checkout-from-cart-btn" class="btn btn-primary btn-block">Buyurtma berish</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WISHLIST DRAWER -->
+    <div id="wishlist-drawer" class="drawer-backdrop">
+        <div class="drawer-panel">
+            <div class="drawer-header">
+                <h3><i class="fa-solid fa-heart" style="color: #ff4757;"></i> Sevimlilar (<span id="drawer-wish-count">0</span>)</h3>
+                <button class="close-drawer" data-close="wishlist-drawer"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="wishlist-items-container" class="drawer-body">
+                <!-- Sevimli mahsulotlar -->
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT DETAILS MODAL -->
+    <div id="product-modal" class="modal-backdrop">
+        <div class="modal-box product-modal-box">
+            <button class="close-modal" data-close="product-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="product-modal-content" class="product-modal-grid">
+                <!-- JS orqali to'ldiriladi -->
+            </div>
+        </div>
+    </div>
+
+    <!-- CHECKOUT / ORDER MODAL -->
+    <div id="checkout-modal" class="modal-backdrop">
+        <div class="modal-box checkout-modal-box">
+            <button class="close-modal" data-close="checkout-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div id="checkout-form-view">
+                <h3 class="modal-title"><i class="fa-solid fa-bag-shopping"></i> Buyurtmani Rasmiylashtirish</h3>
+                <form id="order-form" class="styled-form">
+                    <div class="order-summary-box" id="order-summary-box">
+                        <!-- Mahsulot nomi, soni va umumiy summa -->
+                    </div>
+                    <div class="form-group">
+                        <label for="order-name">Ism va familiya *</label>
+                        <input type="text" id="order-name" required placeholder="Masalan: Jasur Alimov">
+                    </div>
+                    <div class="form-group">
+                        <label for="order-phone">Telefon raqam *</label>
+                        <input type="tel" id="order-phone" required placeholder="+998 90 123 45 67">
+                    </div>
+                    <div class="form-group">
+                        <label for="order-address">Yetkazib berish manzili *</label>
+                        <textarea id="order-address" rows="2" required placeholder="Shahar, tuman, ko‘cha va uy raqami"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Buyurtmani tasdiqlash</button>
+                </form>
+            </div>
+
+            <!-- Success Animation View -->
+            <div id="order-success-view" class="order-success-view hidden">
+                <div class="success-checkmark">
+                    <div class="check-icon">
+                        <span class="icon-line line-tip"></span>
+                        <span class="icon-line line-long"></span>
+                        <div class="icon-circle"></div>
+                        <div class="icon-fix"></div>
+                    </div>
+                </div>
+                <h3>Buyurtmangiz Qabul Qilindi!</h3>
+                <p>Operatorimiz tez orada siz bilan bog‘lanadi. Xaridingiz uchun rahmat!</p>
+                <button class="btn btn-primary" data-close="checkout-modal">Yopish</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- USER PROFILE MODAL -->
+    <div id="profile-modal" class="modal-backdrop">
+        <div class="modal-box profile-modal-box">
+            <button class="close-modal" data-close="profile-modal"><i class="fa-solid fa-xmark"></i></button>
+            
+            <!-- Auth View (Login / Register) -->
+            <div id="auth-view">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-auth="login">Tizimga kirish</button>
+                    <button class="auth-tab" data-auth="register">Ro‘yxatdan o‘tish</button>
+                </div>
+
+                <form id="login-form" class="styled-form">
+                    <div class="form-group">
+                        <label>Telefon raqami</label>
+                        <input type="tel" id="login-phone" required placeholder="+998 91 610 00 00">
+                    </div>
+                    <div class="form-group">
+                        <label>Parol</label>
+                        <input type="password" id="login-pass" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Kirish</button>
+                </form>
+
+                <form id="register-form" class="styled-form hidden">
+                    <div class="form-group">
+                        <label>Ism va familiya</label>
+                        <input type="text" id="reg-name" required placeholder="Ismingiz va familiyangiz">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon raqami</label>
+                        <input type="tel" id="reg-phone" required placeholder="+998 91 610 00 00">
+                    </div>
+                    <div class="form-group">
+                        <label>Parol yarating</label>
+                        <input type="password" id="reg-pass" required placeholder="Kamida 4 ta belgi">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Ro‘yxatdan o‘tish</button>
+                </form>
+            </div>
+
+            <!-- Logged In Profile Dashboard -->
+            <div id="dashboard-view" class="hidden">
+                <div class="profile-header">
+                    <img id="user-avatar-img" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80" alt="Profil rasmi">
+                    <div>
+                        <h3 id="user-display-name">Foydalanuvchi</h3>
+                        <p id="user-display-phone">+998 91 610 00 00</p>
+                    </div>
+                    <button id="logout-btn" class="btn btn-outline btn-sm"><i class="fa-solid fa-right-from-bracket"></i> Chiqish</button>
+                </div>
+
+                <div class="profile-sections-tabs">
+                    <button class="p-tab active" data-ptab="orders">Buyurtmalar tarixi (<span id="user-orders-count">0</span>)</button>
+                    <button class="p-tab" data-ptab="favs">Sevimli mahsulotlar (<span id="user-favs-count">0</span>)</button>
+                </div>
+
+                <div id="profile-orders-list" class="profile-tab-content"></div>
+                <div id="profile-favs-list" class="profile-tab-content hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
